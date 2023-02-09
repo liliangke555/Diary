@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WSWeatherCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="147" height="131"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="147" height="131"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather_background_icon" translatesAutoresizingMaskIntoConstraints="NO" id="dyo-df-RIx">
+                        <rect key="frame" x="0.0" y="0.0" width="147" height="131"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather_sunny_icon" translatesAutoresizingMaskIntoConstraints="NO" id="amD-zo-ULa">
+                        <rect key="frame" x="48.666666666666657" y="40.666666666666657" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="WtE-la-TpD"/>
+                            <constraint firstAttribute="height" constant="50" id="kEr-jH-3PA"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstItem="amD-zo-ULa" firstAttribute="centerY" secondItem="dyo-df-RIx" secondAttribute="centerY" id="0kX-Hg-vhJ"/>
+                <constraint firstItem="dyo-df-RIx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4KE-l5-iq7"/>
+                <constraint firstItem="dyo-df-RIx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="B3d-gk-IHv"/>
+                <constraint firstAttribute="trailing" secondItem="dyo-df-RIx" secondAttribute="trailing" id="Wb4-yX-aNF"/>
+                <constraint firstItem="amD-zo-ULa" firstAttribute="centerX" secondItem="dyo-df-RIx" secondAttribute="centerX" id="X7e-cR-5bS"/>
+                <constraint firstAttribute="bottom" secondItem="dyo-df-RIx" secondAttribute="bottom" id="jLu-nj-fcD"/>
+            </constraints>
+            <size key="customSize" width="147" height="131"/>
+            <connections>
+                <outlet property="pImageView" destination="dyo-df-RIx" id="5B1-56-YAd"/>
+                <outlet property="wImageView" destination="amD-zo-ULa" id="yuQ-ae-nPb"/>
+            </connections>
+            <point key="canvasLocation" x="212.97709923664121" y="48.239436619718312"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="weather_background_icon" width="88" height="82"/>
+        <image name="weather_sunny_icon" width="50" height="50"/>
+    </resources>
+</document>

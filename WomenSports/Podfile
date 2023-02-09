@@ -1,0 +1,40 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'WomenSports' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for WomenSports
+  
+  pod 'IQKeyboardManager'
+  pod 'CYLTabBarController'
+  pod 'Masonry'
+  pod 'JXCategoryView'
+  pod 'JXPagingView/Pager'
+  pod 'MBProgressHUD'
+  pod 'AFNetworking', '~> 4.0'
+  pod 'MJExtension'
+  pod 'lottie-ios', '~> 2.5.2'
+  pod 'MJRefresh'
+  pod 'FMDB'
+  pod 'SDWebImage'
+  pod 'DZNEmptyDataSet'
+#  pod 'AAChartKit', :git => 'https://github.com/AAChartModel/AAChartKit.git'
+#  pod 'HyphenateChat'
+  pod 'EaseIMKit',  :path => "./EaseIMKit"
+  pod 'EaseCallKit', :path => "./EaseCallKit"
+  pod 'YBImageBrowser', '~> 3.0.9'
+  pod 'TZImagePickerController'
+#  pod 'AgoraRtcEngine_iOS', '~> 3.6.3'
+
+  target 'WomenSportsTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'WomenSportsUITests' do
+    # Pods for testing
+  end
+
+end

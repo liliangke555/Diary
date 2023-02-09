@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WSGiftCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="161"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="152" height="161"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gift_feather_icon" translatesAutoresizingMaskIntoConstraints="NO" id="kFh-N3-k3y">
+                        <rect key="frame" x="10" y="7" width="132" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="GIJ-1e-aqO"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sw-rV-cFp">
+                        <rect key="frame" x="55.333333333333329" y="62" width="41.333333333333329" height="19"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gift_coin_icon" translatesAutoresizingMaskIntoConstraints="NO" id="4BI-qb-AzS">
+                                <rect key="frame" x="0.0" y="0.0" width="26" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="2CR-LO-L7O"/>
+                                    <constraint firstAttribute="width" constant="26" id="pMU-Xe-1pB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZl-J2-rP3">
+                                <rect key="frame" x="25.999999999999989" y="0.0" width="15.333333333333332" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.68235294117647061" green="0.68235294117647061" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="4BI-qb-AzS" firstAttribute="leading" secondItem="6sw-rV-cFp" secondAttribute="leading" id="H0H-LO-Nqq"/>
+                            <constraint firstItem="iZl-J2-rP3" firstAttribute="top" secondItem="6sw-rV-cFp" secondAttribute="top" id="O51-a6-uxP"/>
+                            <constraint firstAttribute="bottom" secondItem="4BI-qb-AzS" secondAttribute="bottom" id="V3R-GZ-Uyz"/>
+                            <constraint firstItem="4BI-qb-AzS" firstAttribute="top" secondItem="6sw-rV-cFp" secondAttribute="top" id="c8p-it-JqK"/>
+                            <constraint firstAttribute="bottom" secondItem="iZl-J2-rP3" secondAttribute="bottom" id="hJ7-o9-rXM"/>
+                            <constraint firstItem="iZl-J2-rP3" firstAttribute="leading" secondItem="4BI-qb-AzS" secondAttribute="trailing" id="jmr-7k-ROD"/>
+                            <constraint firstAttribute="trailing" secondItem="iZl-J2-rP3" secondAttribute="trailing" id="kFF-pH-tBe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kFh-N3-k3y" secondAttribute="trailing" constant="10" id="6Cy-aL-3ty"/>
+                <constraint firstItem="6sw-rV-cFp" firstAttribute="centerX" secondItem="kFh-N3-k3y" secondAttribute="centerX" id="MGC-Zw-X4u"/>
+                <constraint firstItem="6sw-rV-cFp" firstAttribute="top" secondItem="kFh-N3-k3y" secondAttribute="bottom" constant="5" id="g0Z-rB-1ff"/>
+                <constraint firstItem="kFh-N3-k3y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="hKk-6x-Fjv"/>
+                <constraint firstItem="kFh-N3-k3y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="7" id="ugM-eR-8AA"/>
+            </constraints>
+            <size key="customSize" width="152" height="161"/>
+            <connections>
+                <outlet property="coinLabel" destination="iZl-J2-rP3" id="p7g-cw-arv"/>
+                <outlet property="pimageView" destination="kFh-N3-k3y" id="Myu-5m-Fms"/>
+            </connections>
+            <point key="canvasLocation" x="216.79389312977099" y="58.802816901408455"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gift_coin_icon" width="26" height="19"/>
+        <image name="gift_feather_icon" width="50" height="50"/>
+    </resources>
+</document>

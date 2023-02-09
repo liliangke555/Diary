@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="391" id="KGk-i7-Jjw" customClass="WSCycleImageTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="391"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="391"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CY0-OW-XuH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="391"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="CY0-OW-XuH" secondAttribute="height" multiplier="375:391" id="cjh-Ba-PJX"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CY0-OW-XuH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9en-I6-cou"/>
+                    <constraint firstAttribute="bottom" secondItem="CY0-OW-XuH" secondAttribute="bottom" id="ALu-cC-o7t"/>
+                    <constraint firstAttribute="trailing" secondItem="CY0-OW-XuH" secondAttribute="trailing" id="nkz-Qy-Qhe"/>
+                    <constraint firstItem="CY0-OW-XuH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="veH-oe-JZo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="pimageView" destination="CY0-OW-XuH" id="PEI-0T-fTr"/>
+            </connections>
+            <point key="canvasLocation" x="151.90839694656489" y="132.74647887323945"/>
+        </tableViewCell>
+    </objects>
+</document>

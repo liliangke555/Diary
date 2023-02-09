@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WSTrainCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="398" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faster" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flf-zp-COF">
+                        <rect key="frame" x="15.000000000000004" y="20" width="46.333333333333343" height="19.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" red="0.19607843137254902" green="0.24705882352941178" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30-40 minutes of training every day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKr-eV-wfz">
+                        <rect key="frame" x="15" y="43" width="232" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.55294117647058827" green="0.58431372549019611" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="lKr-eV-wfz" secondAttribute="bottom" constant="20" id="NJY-Qs-vDo"/>
+                <constraint firstItem="flf-zp-COF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="evU-DB-ZG2"/>
+                <constraint firstItem="flf-zp-COF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="hAZ-Sw-JXF"/>
+                <constraint firstItem="lKr-eV-wfz" firstAttribute="leading" secondItem="flf-zp-COF" secondAttribute="leading" id="u3U-Fu-n2o"/>
+            </constraints>
+            <size key="customSize" width="398" height="80"/>
+            <connections>
+                <outlet property="subTitleLabel" destination="lKr-eV-wfz" id="UwG-e8-wWv"/>
+                <outlet property="titleLabel" destination="flf-zp-COF" id="TPi-Cx-O6X"/>
+            </connections>
+            <point key="canvasLocation" x="404.58015267175568" y="30.281690140845072"/>
+        </collectionViewCell>
+    </objects>
+</document>

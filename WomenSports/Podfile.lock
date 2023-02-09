@@ -1,0 +1,132 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - AgoraRtcEngine_iOS/RtcBasic (3.6.3)
+  - CYLTabBarController (1.29.2):
+    - CYLTabBarController/Core (= 1.29.2)
+  - CYLTabBarController/Core (1.29.2)
+  - DZNEmptyDataSet (1.8.1)
+  - EaseCallKit (3.9.9):
+    - AgoraRtcEngine_iOS/RtcBasic (= 3.6.3)
+    - HyphenateChat (>= 3.9.0)
+    - Masonry
+    - SDWebImage
+  - EaseIMKit (3.9.9):
+    - EMVoiceConvert (= 0.1.0)
+    - HyphenateChat
+  - EMVoiceConvert (0.1.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - HyphenateChat (3.9.9)
+  - IQKeyboardManager (6.5.10)
+  - JXCategoryView (1.6.1)
+  - JXPagingView/Pager (2.1.2)
+  - lottie-ios (2.5.3)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJExtension (3.4.1)
+  - MJRefresh (3.7.5)
+  - SDWebImage (5.13.1):
+    - SDWebImage/Core (= 5.13.1)
+  - SDWebImage/Core (5.13.1)
+  - TZImagePickerController (3.8.3):
+    - TZImagePickerController/Basic (= 3.8.3)
+    - TZImagePickerController/Location (= 3.8.3)
+  - TZImagePickerController/Basic (3.8.3)
+  - TZImagePickerController/Location (3.8.3)
+  - YBImageBrowser (3.0.9):
+    - YBImageBrowser/Core (= 3.0.9)
+  - YBImageBrowser/Core (3.0.9):
+    - SDWebImage (>= 5.0.0)
+    - YYImage
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 4.0)
+  - CYLTabBarController
+  - DZNEmptyDataSet
+  - EaseCallKit (from `./EaseCallKit`)
+  - EaseIMKit (from `./EaseIMKit`)
+  - FMDB
+  - IQKeyboardManager
+  - JXCategoryView
+  - JXPagingView/Pager
+  - lottie-ios (~> 2.5.2)
+  - Masonry
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - SDWebImage
+  - TZImagePickerController
+  - YBImageBrowser (~> 3.0.9)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - AgoraRtcEngine_iOS
+    - CYLTabBarController
+    - DZNEmptyDataSet
+    - EMVoiceConvert
+    - FMDB
+    - HyphenateChat
+    - IQKeyboardManager
+    - JXCategoryView
+    - JXPagingView
+    - lottie-ios
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - SDWebImage
+    - TZImagePickerController
+    - YBImageBrowser
+    - YYImage
+
+EXTERNAL SOURCES:
+  EaseCallKit:
+    :path: "./EaseCallKit"
+  EaseIMKit:
+    :path: "./EaseIMKit"
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  AgoraRtcEngine_iOS: c62828bfdf95b0a505d796122d7a1e6bb17fdf21
+  CYLTabBarController: db44b5901a28693a8a4279e4721b3aafdd36c178
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  EaseCallKit: 7cdda7077529fc5b6e547463ef0cb3549d2a3c04
+  EaseIMKit: c625f78ebb04725b290aa028b6d156b4484117f2
+  EMVoiceConvert: 32a0eaada94d93c151a5abd53ee174cd4e63b01f
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HyphenateChat: 2237c9ece3f1bb54645dea0a9918f08e03e1516d
+  IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
+  JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
+  JXPagingView: 90924b364a2ff7e94db534fad1fa50925ff69ee4
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJExtension: 21c5f6f8c4d5d8844b7ae8fbae08fed0b501f961
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  SDWebImage: fb26a455eeda4c7a55e4dcb6172dbb258af7a4ca
+  TZImagePickerController: e9909edbadf7381140efc5b5c9f5bdbfd630f7d4
+  YBImageBrowser: 7ecc8bf33ffa5f3b94c397c29b4f3638dd37f527
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+
+PODFILE CHECKSUM: fb6f5702c935fecfbf92bb808c5be3b085dcd9bc
+
+COCOAPODS: 1.11.3

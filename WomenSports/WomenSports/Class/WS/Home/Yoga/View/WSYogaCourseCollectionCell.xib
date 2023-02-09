@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WSYogaCourseCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="185"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="174" height="185"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JQE-Ei-Imj">
+                        <rect key="frame" x="0.0" y="0.0" width="174" height="98"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="98" id="svv-mM-jLS"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoga_play_icon" translatesAutoresizingMaskIntoConstraints="NO" id="0ne-yo-iLj">
+                        <rect key="frame" x="10" y="81" width="10" height="10"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.7k" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUd-DE-p0J">
+                        <rect key="frame" x="25" y="79" width="20.333333333333329" height="14.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16:32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaA-GQ-Gkl">
+                        <rect key="frame" x="134.66666666666666" y="79" width="29.333333333333343" height="14.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 minute shoulder……" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMx-6D-leY">
+                        <rect key="frame" x="0.0" y="103" width="174" height="19.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" red="0.19607843137254902" green="0.24705882352941178" blue="0.42745098039215684" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBA-mP-qs0">
+                        <rect key="frame" x="0.0" y="127.33333333333333" width="76.333333333333329" height="22.333333333333329"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zero-based" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8c-AO-Mvo">
+                                <rect key="frame" x="5" y="4.0000000000000151" width="66.333333333333329" height="14.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.53333333333333333" green="0.37254901960784315" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.93725490196078431" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="k8c-AO-Mvo" firstAttribute="leading" secondItem="dBA-mP-qs0" secondAttribute="leading" constant="5" id="8fb-pK-T1a"/>
+                            <constraint firstItem="k8c-AO-Mvo" firstAttribute="top" secondItem="dBA-mP-qs0" secondAttribute="top" constant="4" id="M5m-zd-lOP"/>
+                            <constraint firstAttribute="trailing" secondItem="k8c-AO-Mvo" secondAttribute="trailing" constant="5" id="XYz-nI-Ovh"/>
+                            <constraint firstAttribute="bottom" secondItem="k8c-AO-Mvo" secondAttribute="bottom" constant="4" id="iZC-GT-CqZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstItem="0ne-yo-iLj" firstAttribute="bottom" secondItem="JQE-Ei-Imj" secondAttribute="bottom" constant="-7" id="2Co-09-klb"/>
+                <constraint firstItem="JQE-Ei-Imj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2we-QE-ZLH"/>
+                <constraint firstItem="0ne-yo-iLj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="A7H-hj-0Tk"/>
+                <constraint firstAttribute="trailing" secondItem="TMx-6D-leY" secondAttribute="trailing" id="AIR-vC-wHg"/>
+                <constraint firstAttribute="trailing" secondItem="JQE-Ei-Imj" secondAttribute="trailing" id="OJF-pi-MRC"/>
+                <constraint firstItem="wUd-DE-p0J" firstAttribute="centerY" secondItem="0ne-yo-iLj" secondAttribute="centerY" id="QK0-tS-oZp"/>
+                <constraint firstItem="wUd-DE-p0J" firstAttribute="leading" secondItem="0ne-yo-iLj" secondAttribute="trailing" constant="5" id="VAT-sX-3Jx"/>
+                <constraint firstItem="dBA-mP-qs0" firstAttribute="top" secondItem="TMx-6D-leY" secondAttribute="bottom" constant="5" id="ZK3-xL-EK9"/>
+                <constraint firstItem="TMx-6D-leY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eqI-Vm-n6e"/>
+                <constraint firstItem="HaA-GQ-Gkl" firstAttribute="centerY" secondItem="0ne-yo-iLj" secondAttribute="centerY" id="fcD-Pe-tWa"/>
+                <constraint firstAttribute="trailing" secondItem="HaA-GQ-Gkl" secondAttribute="trailing" constant="10" id="fjZ-hL-lxy"/>
+                <constraint firstItem="dBA-mP-qs0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="inr-pi-WEy"/>
+                <constraint firstItem="JQE-Ei-Imj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pJT-dU-xT3"/>
+                <constraint firstItem="TMx-6D-leY" firstAttribute="top" secondItem="JQE-Ei-Imj" secondAttribute="bottom" constant="5" id="vwI-vF-W5k"/>
+            </constraints>
+            <size key="customSize" width="174" height="185"/>
+            <connections>
+                <outlet property="bageLabel" destination="k8c-AO-Mvo" id="Kcb-TY-PjL"/>
+                <outlet property="bageView" destination="dBA-mP-qs0" id="lvL-Qu-d4u"/>
+                <outlet property="pImageView" destination="JQE-Ei-Imj" id="tiA-6o-6TN"/>
+                <outlet property="playNumLabel" destination="wUd-DE-p0J" id="dls-h1-T5n"/>
+                <outlet property="timeLabel" destination="HaA-GQ-Gkl" id="kyd-mK-teO"/>
+                <outlet property="titleLabel" destination="TMx-6D-leY" id="P2e-Fc-TTU"/>
+            </connections>
+            <point key="canvasLocation" x="233.58778625954199" y="66.549295774647888"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="yoga_play_icon" width="10" height="10"/>
+    </resources>
+</document>

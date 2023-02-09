@@ -1,0 +1,16 @@
+//
+//  WSPushCommunityController.h
+//  WomenSports
+//
+//  Created by 李良科 on 2023/1/9.
+//
+
+#import "WSBaseController.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface WSPushCommunityController : WSBaseController
+
+@end
+
+NS_ASSUME_NONNULL_END
