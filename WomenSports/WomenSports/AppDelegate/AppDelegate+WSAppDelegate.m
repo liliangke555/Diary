@@ -9,9 +9,10 @@
 #import "WSLaunchController.h"
 #import "WSLoginController.h"
 #import "WSLoginNavigationController.h"
-#import "WSTabbarController.h"
+//#import "WSTabbarController.h"
 
-#import "WSMainPageController.h"
+//#import "WSMainPageController.h"
+
 #import "WSDiaryCycleController.h"
 #import "WSPushButton.h"
 #import "WSCYLTabbarController.h"

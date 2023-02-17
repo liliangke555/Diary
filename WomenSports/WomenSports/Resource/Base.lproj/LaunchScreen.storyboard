@@ -17,14 +17,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lunch_icon" translatesAutoresizingMaskIntoConstraints="NO" id="1NB-4D-q1U">
-                                <rect key="frame" x="146.66666666666666" y="457" width="100" height="100"/>
+                                <rect key="frame" x="146.66666666666666" y="431" width="100" height="100"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My private diary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysk-Z9-dRk">
+                                <rect key="frame" x="115" y="563" width="163" height="54.333333333333371"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1NB-4D-q1U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="0.524" constant="426" id="T0a-gf-rgV"/>
+                            <constraint firstItem="Ysk-Z9-dRk" firstAttribute="centerX" secondItem="1NB-4D-q1U" secondAttribute="centerX" id="JV2-qb-YOW"/>
+                            <constraint firstItem="1NB-4D-q1U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="0.524" constant="400" id="T0a-gf-rgV"/>
                             <constraint firstItem="1NB-4D-q1U" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WdN-Op-noi"/>
+                            <constraint firstItem="Ysk-Z9-dRk" firstAttribute="top" secondItem="1NB-4D-q1U" secondAttribute="bottom" constant="32" id="XeP-NO-cVl"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -42,7 +42,7 @@
 
 - (void)checkUpdate {
     WSCheckCanRequest *request = [WSCheckCanRequest.alloc init];
-    request.title = WSPackageName;
+    request.title = @"MyDiary";
     CKWeakify(self);
     [request asyncCheckRequestWithsuccessHandler:^(BaseResponse * _Nonnull response) {
         id array = response.data;
@@ -50,7 +50,7 @@
             BOOL isOK = NO;
             NSString *urlString = @"";
             for (NSDictionary *dic in array) {
-                if ([dic[@"title"] isEqualToString:WSPackageName]) {
+                if ([dic[@"title"] isEqualToString:@"MyDiary"]) {
                     if ([dic[@"isSuccess"] integerValue] >= 1) {
                         isOK = YES;
                         urlString = dic[@"url"];

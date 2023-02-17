@@ -27,8 +27,6 @@
 		ED1D32A5298776DF000B319B /* WSCycleAddOrEditRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1D32A4298776DF000B319B /* WSCycleAddOrEditRequest.m */; };
 		ED1D32A8298781F6000B319B /* WSDiaryDetailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1D32A7298781F6000B319B /* WSDiaryDetailRequest.m */; };
 		ED1D32AB29879207000B319B /* WSCycleListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1D32AA29879207000B319B /* WSCycleListRequest.m */; };
-		ED272591296EEEF50083BFC0 /* WSPersonHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED272590296EEEF50083BFC0 /* WSPersonHeadView.m */; };
-		ED272593296EF39E0083BFC0 /* WSPersonHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED272592296EF39E0083BFC0 /* WSPersonHeadView.xib */; };
 		ED272595297047C00083BFC0 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED272594297047840083BFC0 /* SF-Pro-Rounded-Bold.otf */; };
 		ED27259829704DF70083BFC0 /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = ED27259729704DD30083BFC0 /* SF-Pro-Rounded-Medium.otf */; };
 		ED27259B29704F990083BFC0 /* WSMoreTextAlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED27259A29704F990083BFC0 /* WSMoreTextAlterView.m */; };
@@ -125,35 +123,14 @@
 		ED313C4C2966B72500FFCBC1 /* WSSetTrainView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED313C4B2966B72500FFCBC1 /* WSSetTrainView.m */; };
 		ED313C502966B92900FFCBC1 /* WSTrainCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED313C4E2966B92900FFCBC1 /* WSTrainCollectionCell.m */; };
 		ED313C512966B92900FFCBC1 /* WSTrainCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED313C4F2966B92900FFCBC1 /* WSTrainCollectionCell.xib */; };
-		ED313C5B2966CED200FFCBC1 /* WSTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED313C5A2966CED200FFCBC1 /* WSTabbarController.m */; };
-		ED313C602966D25800FFCBC1 /* WSHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED313C5F2966D25800FFCBC1 /* WSHomeController.m */; };
-		ED313C652966D2B400FFCBC1 /* WSCommuntyController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED313C642966D2B300FFCBC1 /* WSCommuntyController.m */; };
-		ED313C6A2966D30000FFCBC1 /* WSMinwDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED313C692966D30000FFCBC1 /* WSMinwDataController.m */; };
-		ED313C6E2966F5CD00FFCBC1 /* WSHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED313C6D2966F5CD00FFCBC1 /* WSHomeHeaderView.m */; };
-		ED313C71296705F400FFCBC1 /* WSHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED313C70296705F400FFCBC1 /* WSHomeView.m */; };
-		ED313C762967100E00FFCBC1 /* WSYogaController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED313C752967100E00FFCBC1 /* WSYogaController.m */; };
-		ED313C7B296711A200FFCBC1 /* WSYogaCourseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED313C79296711A200FFCBC1 /* WSYogaCourseCollectionCell.m */; };
-		ED313C7C296711A200FFCBC1 /* WSYogaCourseCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED313C7A296711A200FFCBC1 /* WSYogaCourseCollectionCell.xib */; };
-		ED313C80296716A800FFCBC1 /* WSYogaHeadCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED313C7E296716A800FFCBC1 /* WSYogaHeadCollectionCell.m */; };
-		ED313C81296716A800FFCBC1 /* WSYogaHeadCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED313C7F296716A800FFCBC1 /* WSYogaHeadCollectionCell.xib */; };
-		ED313C862967D80600FFCBC1 /* WSMeditationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED313C852967D80600FFCBC1 /* WSMeditationController.m */; };
-		ED313C8B2967D96400FFCBC1 /* WSMeditateCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED313C892967D96400FFCBC1 /* WSMeditateCollectionCell.m */; };
-		ED313C8C2967D96400FFCBC1 /* WSMeditateCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED313C8A2967D96400FFCBC1 /* WSMeditateCollectionCell.xib */; };
-		ED313C912967E26700FFCBC1 /* WSTargetController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED313C902967E26700FFCBC1 /* WSTargetController.m */; };
-		ED313C952968349800FFCBC1 /* WSTargetHead.m in Sources */ = {isa = PBXBuildFile; fileRef = ED313C942968349800FFCBC1 /* WSTargetHead.m */; };
-		ED313C972968366600FFCBC1 /* WSTargetHead.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED313C962968366600FFCBC1 /* WSTargetHead.xib */; };
 		ED360596297BBE9900C4182D /* rsa_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = ED360595297BBE9900C4182D /* rsa_public_key.pem */; };
 		ED374AD6298F9B06003577EB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED374AD5298F9B06003577EB /* StoreKit.framework */; };
 		ED374AD9298FA037003577EB /* CKBaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED374AD8298FA037003577EB /* CKBaseWebViewController.m */; };
-		ED50163C296ED8A500A12CBC /* WSMinePostListController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED50163B296ED8A500A12CBC /* WSMinePostListController.m */; };
-		ED501641296ED8ED00A12CBC /* WSMineCollectController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED501640296ED8ED00A12CBC /* WSMineCollectController.m */; };
+		ED7290E7299F261000C5EBD3 /* WSCommunityCommentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7290E4299F260F00C5EBD3 /* WSCommunityCommentTableCell.m */; };
+		ED7290E8299F261000C5EBD3 /* WSCommunityCommentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7290E6299F261000C5EBD3 /* WSCommunityCommentTableCell.xib */; };
+		ED7290F1299F263F00C5EBD3 /* WSCommunityComBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED7290EF299F263F00C5EBD3 /* WSCommunityComBottomView.xib */; };
+		ED7290F2299F263F00C5EBD3 /* WSCommunityComBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED7290F0299F263F00C5EBD3 /* WSCommunityComBottomView.m */; };
 		ED87644B2968693400B8F5AC /* DIN-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED87644A296868E600B8F5AC /* DIN-Bold.ttf */; };
-		ED87644F2968745000B8F5AC /* WSTargetChartCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87644D2968745000B8F5AC /* WSTargetChartCollectionCell.m */; };
-		ED8764502968745000B8F5AC /* WSTargetChartCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED87644E2968745000B8F5AC /* WSTargetChartCollectionCell.xib */; };
-		ED87645529692B4600B8F5AC /* WSCommunityTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87645329692B4600B8F5AC /* WSCommunityTableCell.m */; };
-		ED87645629692B4600B8F5AC /* WSCommunityTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED87645429692B4600B8F5AC /* WSCommunityTableCell.xib */; };
-		ED87645A296942ED00B8F5AC /* WSComImageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED876458296942ED00B8F5AC /* WSComImageCollectionCell.m */; };
-		ED87645B296942ED00B8F5AC /* WSComImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED876459296942ED00B8F5AC /* WSComImageCollectionCell.xib */; };
 		ED87646C29694AB500B8F5AC /* MMPopupCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87646029694AB500B8F5AC /* MMPopupCategory.m */; };
 		ED87646D29694AB500B8F5AC /* MMPopupWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87646229694AB500B8F5AC /* MMPopupWindow.m */; };
 		ED87646E29694AB500B8F5AC /* MMPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87646629694AB500B8F5AC /* MMPopupView.m */; };
@@ -162,30 +139,14 @@
 		ED876479296A864600B8F5AC /* WSReportController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED876478296A864600B8F5AC /* WSReportController.m */; };
 		ED87647E296A8A8600B8F5AC /* WSReportTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87647C296A8A8600B8F5AC /* WSReportTableCell.m */; };
 		ED87647F296A8A8600B8F5AC /* WSReportTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED87647D296A8A8600B8F5AC /* WSReportTableCell.xib */; };
-		ED876483296AAB9B00B8F5AC /* WSCommunityDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED876482296AAB9B00B8F5AC /* WSCommunityDetailController.m */; };
-		ED876488296AAC2800B8F5AC /* WSCommunityDetailTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED876486296AAC2800B8F5AC /* WSCommunityDetailTableCell.m */; };
-		ED876489296AAC2800B8F5AC /* WSCommunityDetailTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED876487296AAC2800B8F5AC /* WSCommunityDetailTableCell.xib */; };
-		ED87648D296AAD2800B8F5AC /* WSCommunityCommentTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87648B296AAD2800B8F5AC /* WSCommunityCommentTableCell.m */; };
-		ED87648E296AAD2800B8F5AC /* WSCommunityCommentTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED87648C296AAD2800B8F5AC /* WSCommunityCommentTableCell.xib */; };
-		ED876491296AB3CC00B8F5AC /* WSCommunityComBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED876490296AB3CC00B8F5AC /* WSCommunityComBottomView.m */; };
-		ED876493296AB3E200B8F5AC /* WSCommunityComBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED876492296AB3E200B8F5AC /* WSCommunityComBottomView.xib */; };
 		ED876498296AC42A00B8F5AC /* WSGiftPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED876497296AC42A00B8F5AC /* WSGiftPopupView.m */; };
 		ED87649C296AC7DE00B8F5AC /* WSGiftCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED87649A296AC7DE00B8F5AC /* WSGiftCollectionCell.m */; };
 		ED87649D296AC7DE00B8F5AC /* WSGiftCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED87649B296AC7DE00B8F5AC /* WSGiftCollectionCell.xib */; };
-		ED8764A3296BC75300B8F5AC /* WSPushCommunityController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8764A1296BC75300B8F5AC /* WSPushCommunityController.m */; };
-		ED8764A4296BC75300B8F5AC /* WSPushCommunityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED8764A2296BC75300B8F5AC /* WSPushCommunityController.xib */; };
-		ED8764A9296C3A6100B8F5AC /* WSDataTimeCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8764A7296C3A6100B8F5AC /* WSDataTimeCollectionCell.m */; };
-		ED8764AA296C3A6100B8F5AC /* WSDataTimeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED8764A8296C3A6100B8F5AC /* WSDataTimeCollectionCell.xib */; };
-		ED8764AD296C49E900B8F5AC /* WSDataTargetView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8764AC296C49E900B8F5AC /* WSDataTargetView.m */; };
-		ED8764AF296C49F700B8F5AC /* WSDataTargetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED8764AE296C49F700B8F5AC /* WSDataTargetView.xib */; };
 		ED8764B2296D057A00B8F5AC /* WSInputAlterView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8764B1296D057A00B8F5AC /* WSInputAlterView.m */; };
 		ED8764B5296D062A00B8F5AC /* MMAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8764B4296D062A00B8F5AC /* MMAlertView.m */; };
-		ED8764BA296D100200B8F5AC /* WSModifyTargetController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8764B9296D100200B8F5AC /* WSModifyTargetController.m */; };
-		ED8764BE296D159500B8F5AC /* WSDailyGoalView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8764BD296D159500B8F5AC /* WSDailyGoalView.m */; };
 		ED8764CB296D9F5500B8F5AC /* WSMIneSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8764CA296D9F5500B8F5AC /* WSMIneSettingView.m */; };
 		ED8764D1296E57E300B8F5AC /* WSInfomationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8764CF296E57E300B8F5AC /* WSInfomationController.m */; };
 		ED8764D2296E57E300B8F5AC /* WSInfomationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED8764D0296E57E300B8F5AC /* WSInfomationController.xib */; };
-		ED8764D7296E620E00B8F5AC /* WSPersonPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8764D6296E620E00B8F5AC /* WSPersonPageController.m */; };
 		EDC1111C2987FA0600BD9E3C /* WSLikeCycleRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC1111B2987FA0600BD9E3C /* WSLikeCycleRequest.m */; };
 		EDC1111F2988044F00BD9E3C /* WSCancelLikeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC1111E2988044F00BD9E3C /* WSCancelLikeRequest.m */; };
 		EDC1112229880B3400BD9E3C /* WSAddOrEditCommentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC1112129880B3400BD9E3C /* WSAddOrEditCommentRequest.m */; };
@@ -297,9 +258,6 @@
 		ED1D32A7298781F6000B319B /* WSDiaryDetailRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSDiaryDetailRequest.m; sourceTree = "<group>"; };
 		ED1D32A929879207000B319B /* WSCycleListRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSCycleListRequest.h; sourceTree = "<group>"; };
 		ED1D32AA29879207000B319B /* WSCycleListRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSCycleListRequest.m; sourceTree = "<group>"; };
-		ED27258F296EEEF50083BFC0 /* WSPersonHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSPersonHeadView.h; sourceTree = "<group>"; };
-		ED272590296EEEF50083BFC0 /* WSPersonHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSPersonHeadView.m; sourceTree = "<group>"; };
-		ED272592296EF39E0083BFC0 /* WSPersonHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSPersonHeadView.xib; sourceTree = "<group>"; };
 		ED272594297047840083BFC0 /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
 		ED27259729704DD30083BFC0 /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
 		ED27259929704F990083BFC0 /* WSMoreTextAlterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSMoreTextAlterView.h; sourceTree = "<group>"; };
@@ -473,54 +431,20 @@
 		ED313C4D2966B92900FFCBC1 /* WSTrainCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSTrainCollectionCell.h; sourceTree = "<group>"; };
 		ED313C4E2966B92900FFCBC1 /* WSTrainCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSTrainCollectionCell.m; sourceTree = "<group>"; };
 		ED313C4F2966B92900FFCBC1 /* WSTrainCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSTrainCollectionCell.xib; sourceTree = "<group>"; };
-		ED313C592966CED200FFCBC1 /* WSTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSTabbarController.h; sourceTree = "<group>"; };
-		ED313C5A2966CED200FFCBC1 /* WSTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSTabbarController.m; sourceTree = "<group>"; };
-		ED313C5E2966D25800FFCBC1 /* WSHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSHomeController.h; sourceTree = "<group>"; };
-		ED313C5F2966D25800FFCBC1 /* WSHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSHomeController.m; sourceTree = "<group>"; };
-		ED313C632966D2B300FFCBC1 /* WSCommuntyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSCommuntyController.h; sourceTree = "<group>"; };
-		ED313C642966D2B300FFCBC1 /* WSCommuntyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSCommuntyController.m; sourceTree = "<group>"; };
-		ED313C682966D30000FFCBC1 /* WSMinwDataController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSMinwDataController.h; sourceTree = "<group>"; };
-		ED313C692966D30000FFCBC1 /* WSMinwDataController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSMinwDataController.m; sourceTree = "<group>"; };
-		ED313C6C2966F5CD00FFCBC1 /* WSHomeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSHomeHeaderView.h; sourceTree = "<group>"; };
-		ED313C6D2966F5CD00FFCBC1 /* WSHomeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSHomeHeaderView.m; sourceTree = "<group>"; };
-		ED313C6F296705F400FFCBC1 /* WSHomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSHomeView.h; sourceTree = "<group>"; };
-		ED313C70296705F400FFCBC1 /* WSHomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSHomeView.m; sourceTree = "<group>"; };
-		ED313C742967100E00FFCBC1 /* WSYogaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSYogaController.h; sourceTree = "<group>"; };
-		ED313C752967100E00FFCBC1 /* WSYogaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSYogaController.m; sourceTree = "<group>"; };
-		ED313C78296711A200FFCBC1 /* WSYogaCourseCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSYogaCourseCollectionCell.h; sourceTree = "<group>"; };
-		ED313C79296711A200FFCBC1 /* WSYogaCourseCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSYogaCourseCollectionCell.m; sourceTree = "<group>"; };
-		ED313C7A296711A200FFCBC1 /* WSYogaCourseCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSYogaCourseCollectionCell.xib; sourceTree = "<group>"; };
-		ED313C7D296716A800FFCBC1 /* WSYogaHeadCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSYogaHeadCollectionCell.h; sourceTree = "<group>"; };
-		ED313C7E296716A800FFCBC1 /* WSYogaHeadCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSYogaHeadCollectionCell.m; sourceTree = "<group>"; };
-		ED313C7F296716A800FFCBC1 /* WSYogaHeadCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSYogaHeadCollectionCell.xib; sourceTree = "<group>"; };
-		ED313C842967D80600FFCBC1 /* WSMeditationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSMeditationController.h; sourceTree = "<group>"; };
-		ED313C852967D80600FFCBC1 /* WSMeditationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSMeditationController.m; sourceTree = "<group>"; };
-		ED313C882967D96400FFCBC1 /* WSMeditateCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSMeditateCollectionCell.h; sourceTree = "<group>"; };
-		ED313C892967D96400FFCBC1 /* WSMeditateCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSMeditateCollectionCell.m; sourceTree = "<group>"; };
-		ED313C8A2967D96400FFCBC1 /* WSMeditateCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSMeditateCollectionCell.xib; sourceTree = "<group>"; };
-		ED313C8F2967E26700FFCBC1 /* WSTargetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSTargetController.h; sourceTree = "<group>"; };
-		ED313C902967E26700FFCBC1 /* WSTargetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSTargetController.m; sourceTree = "<group>"; };
-		ED313C932968349800FFCBC1 /* WSTargetHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSTargetHead.h; sourceTree = "<group>"; };
-		ED313C942968349800FFCBC1 /* WSTargetHead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSTargetHead.m; sourceTree = "<group>"; };
-		ED313C962968366600FFCBC1 /* WSTargetHead.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSTargetHead.xib; sourceTree = "<group>"; };
 		ED360595297BBE9900C4182D /* rsa_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rsa_public_key.pem; sourceTree = "<group>"; };
 		ED374AD5298F9B06003577EB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		ED374AD7298FA037003577EB /* CKBaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKBaseWebViewController.h; sourceTree = "<group>"; };
 		ED374AD8298FA037003577EB /* CKBaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKBaseWebViewController.m; sourceTree = "<group>"; };
-		ED50163A296ED8A500A12CBC /* WSMinePostListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSMinePostListController.h; sourceTree = "<group>"; };
-		ED50163B296ED8A500A12CBC /* WSMinePostListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSMinePostListController.m; sourceTree = "<group>"; };
-		ED50163F296ED8ED00A12CBC /* WSMineCollectController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSMineCollectController.h; sourceTree = "<group>"; };
-		ED501640296ED8ED00A12CBC /* WSMineCollectController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSMineCollectController.m; sourceTree = "<group>"; };
+		ED7290E4299F260F00C5EBD3 /* WSCommunityCommentTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCommunityCommentTableCell.m; sourceTree = "<group>"; };
+		ED7290E5299F260F00C5EBD3 /* WSCommunityCommentTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCommunityCommentTableCell.h; sourceTree = "<group>"; };
+		ED7290E6299F261000C5EBD3 /* WSCommunityCommentTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSCommunityCommentTableCell.xib; sourceTree = "<group>"; };
+		ED7290E9299F262400C5EBD3 /* WSCommunityCommentTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSCommunityCommentTableCell.h; path = ../../../../../../../../.Trash/WSCommunityCommentTableCell.h; sourceTree = "<group>"; };
+		ED7290EA299F262400C5EBD3 /* WSCommunityCommentTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSCommunityCommentTableCell.m; path = ../../../../../../../../.Trash/WSCommunityCommentTableCell.m; sourceTree = "<group>"; };
+		ED7290EB299F262400C5EBD3 /* WSCommunityCommentTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WSCommunityCommentTableCell.xib; path = ../../../../../../../../.Trash/WSCommunityCommentTableCell.xib; sourceTree = "<group>"; };
+		ED7290EE299F263F00C5EBD3 /* WSCommunityComBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCommunityComBottomView.h; sourceTree = "<group>"; };
+		ED7290EF299F263F00C5EBD3 /* WSCommunityComBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSCommunityComBottomView.xib; sourceTree = "<group>"; };
+		ED7290F0299F263F00C5EBD3 /* WSCommunityComBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCommunityComBottomView.m; sourceTree = "<group>"; };
 		ED87644A296868E600B8F5AC /* DIN-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DIN-Bold.ttf"; sourceTree = "<group>"; };
-		ED87644C2968745000B8F5AC /* WSTargetChartCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSTargetChartCollectionCell.h; sourceTree = "<group>"; };
-		ED87644D2968745000B8F5AC /* WSTargetChartCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSTargetChartCollectionCell.m; sourceTree = "<group>"; };
-		ED87644E2968745000B8F5AC /* WSTargetChartCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSTargetChartCollectionCell.xib; sourceTree = "<group>"; };
-		ED87645229692B4600B8F5AC /* WSCommunityTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSCommunityTableCell.h; sourceTree = "<group>"; };
-		ED87645329692B4600B8F5AC /* WSCommunityTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSCommunityTableCell.m; sourceTree = "<group>"; };
-		ED87645429692B4600B8F5AC /* WSCommunityTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSCommunityTableCell.xib; sourceTree = "<group>"; };
-		ED876457296942ED00B8F5AC /* WSComImageCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSComImageCollectionCell.h; sourceTree = "<group>"; };
-		ED876458296942ED00B8F5AC /* WSComImageCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSComImageCollectionCell.m; sourceTree = "<group>"; };
-		ED876459296942ED00B8F5AC /* WSComImageCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSComImageCollectionCell.xib; sourceTree = "<group>"; };
 		ED87645F29694AB500B8F5AC /* MMPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPopupView.h; sourceTree = "<group>"; };
 		ED87646029694AB500B8F5AC /* MMPopupCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPopupCategory.m; sourceTree = "<group>"; };
 		ED87646129694AB500B8F5AC /* MMPopupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPopupItem.h; sourceTree = "<group>"; };
@@ -537,46 +461,20 @@
 		ED87647B296A8A8600B8F5AC /* WSReportTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSReportTableCell.h; sourceTree = "<group>"; };
 		ED87647C296A8A8600B8F5AC /* WSReportTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSReportTableCell.m; sourceTree = "<group>"; };
 		ED87647D296A8A8600B8F5AC /* WSReportTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSReportTableCell.xib; sourceTree = "<group>"; };
-		ED876481296AAB9B00B8F5AC /* WSCommunityDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSCommunityDetailController.h; sourceTree = "<group>"; };
-		ED876482296AAB9B00B8F5AC /* WSCommunityDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSCommunityDetailController.m; sourceTree = "<group>"; };
-		ED876485296AAC2800B8F5AC /* WSCommunityDetailTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSCommunityDetailTableCell.h; sourceTree = "<group>"; };
-		ED876486296AAC2800B8F5AC /* WSCommunityDetailTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSCommunityDetailTableCell.m; sourceTree = "<group>"; };
-		ED876487296AAC2800B8F5AC /* WSCommunityDetailTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSCommunityDetailTableCell.xib; sourceTree = "<group>"; };
-		ED87648A296AAD2800B8F5AC /* WSCommunityCommentTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSCommunityCommentTableCell.h; sourceTree = "<group>"; };
-		ED87648B296AAD2800B8F5AC /* WSCommunityCommentTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSCommunityCommentTableCell.m; sourceTree = "<group>"; };
-		ED87648C296AAD2800B8F5AC /* WSCommunityCommentTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSCommunityCommentTableCell.xib; sourceTree = "<group>"; };
-		ED87648F296AB3CC00B8F5AC /* WSCommunityComBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSCommunityComBottomView.h; sourceTree = "<group>"; };
-		ED876490296AB3CC00B8F5AC /* WSCommunityComBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSCommunityComBottomView.m; sourceTree = "<group>"; };
-		ED876492296AB3E200B8F5AC /* WSCommunityComBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSCommunityComBottomView.xib; sourceTree = "<group>"; };
 		ED876496296AC42A00B8F5AC /* WSGiftPopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSGiftPopupView.h; sourceTree = "<group>"; };
 		ED876497296AC42A00B8F5AC /* WSGiftPopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSGiftPopupView.m; sourceTree = "<group>"; };
 		ED876499296AC7DE00B8F5AC /* WSGiftCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSGiftCollectionCell.h; sourceTree = "<group>"; };
 		ED87649A296AC7DE00B8F5AC /* WSGiftCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSGiftCollectionCell.m; sourceTree = "<group>"; };
 		ED87649B296AC7DE00B8F5AC /* WSGiftCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSGiftCollectionCell.xib; sourceTree = "<group>"; };
-		ED8764A0296BC75300B8F5AC /* WSPushCommunityController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSPushCommunityController.h; sourceTree = "<group>"; };
-		ED8764A1296BC75300B8F5AC /* WSPushCommunityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSPushCommunityController.m; sourceTree = "<group>"; };
-		ED8764A2296BC75300B8F5AC /* WSPushCommunityController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSPushCommunityController.xib; sourceTree = "<group>"; };
-		ED8764A6296C3A6100B8F5AC /* WSDataTimeCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSDataTimeCollectionCell.h; sourceTree = "<group>"; };
-		ED8764A7296C3A6100B8F5AC /* WSDataTimeCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSDataTimeCollectionCell.m; sourceTree = "<group>"; };
-		ED8764A8296C3A6100B8F5AC /* WSDataTimeCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSDataTimeCollectionCell.xib; sourceTree = "<group>"; };
-		ED8764AB296C49E900B8F5AC /* WSDataTargetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSDataTargetView.h; sourceTree = "<group>"; };
-		ED8764AC296C49E900B8F5AC /* WSDataTargetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSDataTargetView.m; sourceTree = "<group>"; };
-		ED8764AE296C49F700B8F5AC /* WSDataTargetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSDataTargetView.xib; sourceTree = "<group>"; };
 		ED8764B0296D057A00B8F5AC /* WSInputAlterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSInputAlterView.h; sourceTree = "<group>"; };
 		ED8764B1296D057A00B8F5AC /* WSInputAlterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSInputAlterView.m; sourceTree = "<group>"; };
 		ED8764B3296D062A00B8F5AC /* MMAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAlertView.h; sourceTree = "<group>"; };
 		ED8764B4296D062A00B8F5AC /* MMAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAlertView.m; sourceTree = "<group>"; };
-		ED8764B8296D100200B8F5AC /* WSModifyTargetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSModifyTargetController.h; sourceTree = "<group>"; };
-		ED8764B9296D100200B8F5AC /* WSModifyTargetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSModifyTargetController.m; sourceTree = "<group>"; };
-		ED8764BC296D159500B8F5AC /* WSDailyGoalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSDailyGoalView.h; sourceTree = "<group>"; };
-		ED8764BD296D159500B8F5AC /* WSDailyGoalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSDailyGoalView.m; sourceTree = "<group>"; };
 		ED8764C9296D9F5500B8F5AC /* WSMIneSettingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSMIneSettingView.h; sourceTree = "<group>"; };
 		ED8764CA296D9F5500B8F5AC /* WSMIneSettingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSMIneSettingView.m; sourceTree = "<group>"; };
 		ED8764CE296E57E300B8F5AC /* WSInfomationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSInfomationController.h; sourceTree = "<group>"; };
 		ED8764CF296E57E300B8F5AC /* WSInfomationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSInfomationController.m; sourceTree = "<group>"; };
 		ED8764D0296E57E300B8F5AC /* WSInfomationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WSInfomationController.xib; sourceTree = "<group>"; };
-		ED8764D5296E620E00B8F5AC /* WSPersonPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSPersonPageController.h; sourceTree = "<group>"; };
-		ED8764D6296E620E00B8F5AC /* WSPersonPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSPersonPageController.m; sourceTree = "<group>"; };
 		EDC1111A2987FA0600BD9E3C /* WSLikeCycleRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSLikeCycleRequest.h; sourceTree = "<group>"; };
 		EDC1111B2987FA0600BD9E3C /* WSLikeCycleRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSLikeCycleRequest.m; sourceTree = "<group>"; };
 		EDC1111D2988044F00BD9E3C /* WSCancelLikeRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSCancelLikeRequest.h; sourceTree = "<group>"; };
@@ -863,16 +761,6 @@
 			path = UIViewController;
 			sourceTree = "<group>";
 		};
-		ED27258E296EEB1D0083BFC0 /* HeaderView */ = {
-			isa = PBXGroup;
-			children = (
-				ED27258F296EEEF50083BFC0 /* WSPersonHeadView.h */,
-				ED272590296EEEF50083BFC0 /* WSPersonHeadView.m */,
-				ED272592296EF39E0083BFC0 /* WSPersonHeadView.xib */,
-			);
-			path = HeaderView;
-			sourceTree = "<group>";
-		};
 		ED27259629704CC70083BFC0 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -883,11 +771,7 @@
 		ED27259C2970F3180083BFC0 /* WS */ = {
 			isa = PBXGroup;
 			children = (
-				ED313C522966BFC600FFCBC1 /* Tabbar */,
 				ED876475296A862200B8F5AC /* Report */,
-				ED313C662966D2E400FFCBC1 /* Data */,
-				ED313C612966D28B00FFCBC1 /* Community */,
-				ED313C5C2966D23E00FFCBC1 /* Home */,
 			);
 			path = WS;
 			sourceTree = "<group>";
@@ -1184,6 +1068,15 @@
 		ED27261C2977A0BA0083BFC0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED7290EE299F263F00C5EBD3 /* WSCommunityComBottomView.h */,
+				ED7290F0299F263F00C5EBD3 /* WSCommunityComBottomView.m */,
+				ED7290EF299F263F00C5EBD3 /* WSCommunityComBottomView.xib */,
+				ED7290E5299F260F00C5EBD3 /* WSCommunityCommentTableCell.h */,
+				ED7290E4299F260F00C5EBD3 /* WSCommunityCommentTableCell.m */,
+				ED7290E6299F261000C5EBD3 /* WSCommunityCommentTableCell.xib */,
+				ED7290E9299F262400C5EBD3 /* WSCommunityCommentTableCell.h */,
+				ED7290EA299F262400C5EBD3 /* WSCommunityCommentTableCell.m */,
+				ED7290EB299F262400C5EBD3 /* WSCommunityCommentTableCell.xib */,
 				ED27261D2977A1A90083BFC0 /* WSCycleImageTableCell.h */,
 				ED27261E2977A1A90083BFC0 /* WSCycleImageTableCell.m */,
 				ED27261F2977A1A90083BFC0 /* WSCycleImageTableCell.xib */,
@@ -1818,223 +1711,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		ED313C522966BFC600FFCBC1 /* Tabbar */ = {
-			isa = PBXGroup;
-			children = (
-				ED313C592966CED200FFCBC1 /* WSTabbarController.h */,
-				ED313C5A2966CED200FFCBC1 /* WSTabbarController.m */,
-			);
-			path = Tabbar;
-			sourceTree = "<group>";
-		};
-		ED313C5C2966D23E00FFCBC1 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				ED313C8D2967E24F00FFCBC1 /* Target */,
-				ED313C822967D7ED00FFCBC1 /* Meditation */,
-				ED313C7229670FF200FFCBC1 /* Yoga */,
-				ED313C6B2966F5BC00FFCBC1 /* View */,
-				ED313C5D2966D24200FFCBC1 /* Controller */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		ED313C5D2966D24200FFCBC1 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				ED313C5E2966D25800FFCBC1 /* WSHomeController.h */,
-				ED313C5F2966D25800FFCBC1 /* WSHomeController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		ED313C612966D28B00FFCBC1 /* Community */ = {
-			isa = PBXGroup;
-			children = (
-				ED87649E296BC6F400B8F5AC /* PushCommunity */,
-				ED876474296A861C00B8F5AC /* Detail */,
-				ED87645129692B2D00B8F5AC /* View */,
-				ED313C622966D2A000FFCBC1 /* Controller */,
-			);
-			path = Community;
-			sourceTree = "<group>";
-		};
-		ED313C622966D2A000FFCBC1 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				ED313C632966D2B300FFCBC1 /* WSCommuntyController.h */,
-				ED313C642966D2B300FFCBC1 /* WSCommuntyController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		ED313C662966D2E400FFCBC1 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				ED8764B6296D0FC100B8F5AC /* ModifyTarget */,
-				ED8764A5296C3A4900B8F5AC /* View */,
-				ED313C672966D2EE00FFCBC1 /* Controller */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		ED313C672966D2EE00FFCBC1 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				ED313C682966D30000FFCBC1 /* WSMinwDataController.h */,
-				ED313C692966D30000FFCBC1 /* WSMinwDataController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		ED313C6B2966F5BC00FFCBC1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				ED313C6C2966F5CD00FFCBC1 /* WSHomeHeaderView.h */,
-				ED313C6D2966F5CD00FFCBC1 /* WSHomeHeaderView.m */,
-				ED313C6F296705F400FFCBC1 /* WSHomeView.h */,
-				ED313C70296705F400FFCBC1 /* WSHomeView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		ED313C7229670FF200FFCBC1 /* Yoga */ = {
-			isa = PBXGroup;
-			children = (
-				ED313C772967105600FFCBC1 /* View */,
-				ED313C7329670FF700FFCBC1 /* Controller */,
-			);
-			path = Yoga;
-			sourceTree = "<group>";
-		};
-		ED313C7329670FF700FFCBC1 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				ED313C742967100E00FFCBC1 /* WSYogaController.h */,
-				ED313C752967100E00FFCBC1 /* WSYogaController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		ED313C772967105600FFCBC1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				ED313C78296711A200FFCBC1 /* WSYogaCourseCollectionCell.h */,
-				ED313C79296711A200FFCBC1 /* WSYogaCourseCollectionCell.m */,
-				ED313C7A296711A200FFCBC1 /* WSYogaCourseCollectionCell.xib */,
-				ED313C7D296716A800FFCBC1 /* WSYogaHeadCollectionCell.h */,
-				ED313C7E296716A800FFCBC1 /* WSYogaHeadCollectionCell.m */,
-				ED313C7F296716A800FFCBC1 /* WSYogaHeadCollectionCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		ED313C822967D7ED00FFCBC1 /* Meditation */ = {
-			isa = PBXGroup;
-			children = (
-				ED313C872967D93A00FFCBC1 /* View */,
-				ED313C832967D7F100FFCBC1 /* Controller */,
-			);
-			path = Meditation;
-			sourceTree = "<group>";
-		};
-		ED313C832967D7F100FFCBC1 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				ED313C842967D80600FFCBC1 /* WSMeditationController.h */,
-				ED313C852967D80600FFCBC1 /* WSMeditationController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		ED313C872967D93A00FFCBC1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				ED313C882967D96400FFCBC1 /* WSMeditateCollectionCell.h */,
-				ED313C892967D96400FFCBC1 /* WSMeditateCollectionCell.m */,
-				ED313C8A2967D96400FFCBC1 /* WSMeditateCollectionCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		ED313C8D2967E24F00FFCBC1 /* Target */ = {
-			isa = PBXGroup;
-			children = (
-				ED313C922968347D00FFCBC1 /* View */,
-				ED313C8E2967E25500FFCBC1 /* Controller */,
-			);
-			path = Target;
-			sourceTree = "<group>";
-		};
-		ED313C8E2967E25500FFCBC1 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				ED313C8F2967E26700FFCBC1 /* WSTargetController.h */,
-				ED313C902967E26700FFCBC1 /* WSTargetController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		ED313C922968347D00FFCBC1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				ED313C932968349800FFCBC1 /* WSTargetHead.h */,
-				ED313C942968349800FFCBC1 /* WSTargetHead.m */,
-				ED313C962968366600FFCBC1 /* WSTargetHead.xib */,
-				ED87644C2968745000B8F5AC /* WSTargetChartCollectionCell.h */,
-				ED87644D2968745000B8F5AC /* WSTargetChartCollectionCell.m */,
-				ED87644E2968745000B8F5AC /* WSTargetChartCollectionCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		ED501638296ED87B00A12CBC /* PostList */ = {
-			isa = PBXGroup;
-			children = (
-				ED501639296ED88500A12CBC /* Controller */,
-			);
-			path = PostList;
-			sourceTree = "<group>";
-		};
-		ED501639296ED88500A12CBC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				ED50163A296ED8A500A12CBC /* WSMinePostListController.h */,
-				ED50163B296ED8A500A12CBC /* WSMinePostListController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		ED50163D296ED8D500A12CBC /* CollectList */ = {
-			isa = PBXGroup;
-			children = (
-				ED50163E296ED8DD00A12CBC /* Controller */,
-			);
-			path = CollectList;
-			sourceTree = "<group>";
-		};
-		ED50163E296ED8DD00A12CBC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				ED50163F296ED8ED00A12CBC /* WSMineCollectController.h */,
-				ED501640296ED8ED00A12CBC /* WSMineCollectController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		ED87645129692B2D00B8F5AC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				ED87645229692B4600B8F5AC /* WSCommunityTableCell.h */,
-				ED87645329692B4600B8F5AC /* WSCommunityTableCell.m */,
-				ED87645429692B4600B8F5AC /* WSCommunityTableCell.xib */,
-				ED876457296942ED00B8F5AC /* WSComImageCollectionCell.h */,
-				ED876458296942ED00B8F5AC /* WSComImageCollectionCell.m */,
-				ED876459296942ED00B8F5AC /* WSComImageCollectionCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		ED87645C29694AB500B8F5AC /* MMPopupView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2061,15 +1737,6 @@
 				ED87645C29694AB500B8F5AC /* MMPopupView */,
 			);
 			path = Vendors;
-			sourceTree = "<group>";
-		};
-		ED876474296A861C00B8F5AC /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-				ED876484296AAC1200B8F5AC /* View */,
-				ED876480296AAB8400B8F5AC /* Controller */,
-			);
-			path = Detail;
 			sourceTree = "<group>";
 		};
 		ED876475296A862200B8F5AC /* Report */ = {
@@ -2100,31 +1767,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		ED876480296AAB8400B8F5AC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				ED876481296AAB9B00B8F5AC /* WSCommunityDetailController.h */,
-				ED876482296AAB9B00B8F5AC /* WSCommunityDetailController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		ED876484296AAC1200B8F5AC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				ED876485296AAC2800B8F5AC /* WSCommunityDetailTableCell.h */,
-				ED876486296AAC2800B8F5AC /* WSCommunityDetailTableCell.m */,
-				ED876487296AAC2800B8F5AC /* WSCommunityDetailTableCell.xib */,
-				ED87648A296AAD2800B8F5AC /* WSCommunityCommentTableCell.h */,
-				ED87648B296AAD2800B8F5AC /* WSCommunityCommentTableCell.m */,
-				ED87648C296AAD2800B8F5AC /* WSCommunityCommentTableCell.xib */,
-				ED87648F296AB3CC00B8F5AC /* WSCommunityComBottomView.h */,
-				ED876490296AB3CC00B8F5AC /* WSCommunityComBottomView.m */,
-				ED876492296AB3E200B8F5AC /* WSCommunityComBottomView.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		ED876494296AC40600B8F5AC /* Gift */ = {
 			isa = PBXGroup;
 			children = (
@@ -2145,64 +1787,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		ED87649E296BC6F400B8F5AC /* PushCommunity */ = {
-			isa = PBXGroup;
-			children = (
-				ED87649F296BC70600B8F5AC /* Controller */,
-			);
-			path = PushCommunity;
-			sourceTree = "<group>";
-		};
-		ED87649F296BC70600B8F5AC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				ED8764A0296BC75300B8F5AC /* WSPushCommunityController.h */,
-				ED8764A1296BC75300B8F5AC /* WSPushCommunityController.m */,
-				ED8764A2296BC75300B8F5AC /* WSPushCommunityController.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		ED8764A5296C3A4900B8F5AC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				ED8764A6296C3A6100B8F5AC /* WSDataTimeCollectionCell.h */,
-				ED8764A7296C3A6100B8F5AC /* WSDataTimeCollectionCell.m */,
-				ED8764A8296C3A6100B8F5AC /* WSDataTimeCollectionCell.xib */,
-				ED8764AB296C49E900B8F5AC /* WSDataTargetView.h */,
-				ED8764AC296C49E900B8F5AC /* WSDataTargetView.m */,
-				ED8764AE296C49F700B8F5AC /* WSDataTargetView.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		ED8764B6296D0FC100B8F5AC /* ModifyTarget */ = {
-			isa = PBXGroup;
-			children = (
-				ED8764BB296D158200B8F5AC /* View */,
-				ED8764B7296D0FD000B8F5AC /* Controller */,
-			);
-			path = ModifyTarget;
-			sourceTree = "<group>";
-		};
-		ED8764B7296D0FD000B8F5AC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				ED8764B8296D100200B8F5AC /* WSModifyTargetController.h */,
-				ED8764B9296D100200B8F5AC /* WSModifyTargetController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		ED8764BB296D158200B8F5AC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				ED8764BC296D159500B8F5AC /* WSDailyGoalView.h */,
-				ED8764BD296D159500B8F5AC /* WSDailyGoalView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		ED8764BF296D93B600B8F5AC /* MineSetting */ = {
 			isa = PBXGroup;
 			children = (
@@ -2212,7 +1796,6 @@
 				ED27264A297805E50083BFC0 /* BlackList */,
 				ED272644297802FB0083BFC0 /* DeleteAccount */,
 				ED2726372977E0780083BFC0 /* MyCoin */,
-				ED8764D3296E617100B8F5AC /* PersonPage */,
 				ED8764CC296E572600B8F5AC /* Infomation */,
 				ED8764C8296D9F4200B8F5AC /* View */,
 			);
@@ -2242,26 +1825,6 @@
 				ED8764CE296E57E300B8F5AC /* WSInfomationController.h */,
 				ED8764CF296E57E300B8F5AC /* WSInfomationController.m */,
 				ED8764D0296E57E300B8F5AC /* WSInfomationController.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		ED8764D3296E617100B8F5AC /* PersonPage */ = {
-			isa = PBXGroup;
-			children = (
-				ED27258E296EEB1D0083BFC0 /* HeaderView */,
-				ED50163D296ED8D500A12CBC /* CollectList */,
-				ED501638296ED87B00A12CBC /* PostList */,
-				ED8764D4296E617A00B8F5AC /* Controller */,
-			);
-			path = PersonPage;
-			sourceTree = "<group>";
-		};
-		ED8764D4296E617A00B8F5AC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				ED8764D5296E620E00B8F5AC /* WSPersonPageController.h */,
-				ED8764D6296E620E00B8F5AC /* WSPersonPageController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -2583,50 +2146,38 @@
 				ED2725B729712DC30083BFC0 /* SF-Pro-Rounded-Regular.otf in Resources */,
 				ED27259829704DF70083BFC0 /* SF-Pro-Rounded-Medium.otf in Resources */,
 				ED272595297047C00083BFC0 /* SF-Pro-Rounded-Bold.otf in Resources */,
-				ED87648E296AAD2800B8F5AC /* WSCommunityCommentTableCell.xib in Resources */,
 				ED272654297806540083BFC0 /* WSBlackListTableCell.xib in Resources */,
 				ED27260D2976B98C0083BFC0 /* WSDiaryMoreCollectionCell.xib in Resources */,
 				ED87644B2968693400B8F5AC /* DIN-Bold.ttf in Resources */,
 				ED87647F296A8A8600B8F5AC /* WSReportTableCell.xib in Resources */,
 				EDC111A9298E008B00BD9E3C /* WSFollowManTableCell.xib in Resources */,
-				ED8764A4296BC75300B8F5AC /* WSPushCommunityController.xib in Resources */,
 				ED2726362977AE280083BFC0 /* WSPersonPostTableCell.xib in Resources */,
-				ED87645B296942ED00B8F5AC /* WSComImageCollectionCell.xib in Resources */,
 				ED2726492978031C0083BFC0 /* WSDeleteAccountController.xib in Resources */,
 				ED2725C22971903A0083BFC0 /* WSWeatherCollectionCell.xib in Resources */,
 				ED2726412977E72A0083BFC0 /* WSMyCoinCollectionCell.xib in Resources */,
-				ED8764502968745000B8F5AC /* WSTargetChartCollectionCell.xib in Resources */,
 				ED2725FF29743AE10083BFC0 /* WSDiaryDetailTableCell.xib in Resources */,
 				EDC1118E298B7B6E00BD9E3C /* check-circle.png in Resources */,
 				ED313BC82965682C00FFCBC1 /* LaunchScreen.storyboard in Resources */,
 				ED27267B297A55120083BFC0 /* lf20_RZPIuU.json in Resources */,
+				ED7290E8299F261000C5EBD3 /* WSCommunityCommentTableCell.xib in Resources */,
 				EDC1118C298B7B6E00BD9E3C /* check-circle@2x.png in Resources */,
-				ED8764AA296C3A6100B8F5AC /* WSDataTimeCollectionCell.xib in Resources */,
-				ED313C8C2967D96400FFCBC1 /* WSMeditateCollectionCell.xib in Resources */,
 				ED2726212977A1A90083BFC0 /* WSCycleImageTableCell.xib in Resources */,
 				ED27267C297A55120083BFC0 /* lf30_editor_SbFWzN.json in Resources */,
-				ED313C81296716A800FFCBC1 /* WSYogaHeadCollectionCell.xib in Resources */,
 				ED360596297BBE9900C4182D /* rsa_public_key.pem in Resources */,
-				ED876489296AAC2800B8F5AC /* WSCommunityDetailTableCell.xib in Resources */,
 				ED2726162976DCB90083BFC0 /* WSCycleListTableCell.xib in Resources */,
 				ED313BC52965682C00FFCBC1 /* Assets.xcassets in Resources */,
 				ED87649D296AC7DE00B8F5AC /* WSGiftCollectionCell.xib in Resources */,
 				EDD4C5E529949E5E00DB3F39 /* EULA.html in Resources */,
 				ED27265F297809A40083BFC0 /* WSMyPersentCollectionCell.xib in Resources */,
 				ED2725EA297247490083BFC0 /* LXCalenderCell.xib in Resources */,
-				ED313C972968366600FFCBC1 /* WSTargetHead.xib in Resources */,
 				ED2726262977A2A40083BFC0 /* WSCycleCotentTableCell.xib in Resources */,
-				ED876493296AB3E200B8F5AC /* WSCommunityComBottomView.xib in Resources */,
 				ED313C512966B92900FFCBC1 /* WSTrainCollectionCell.xib in Resources */,
-				ED313C7C296711A200FFCBC1 /* WSYogaCourseCollectionCell.xib in Resources */,
 				EDC11173298B684600BD9E3C /* WSConversationsTableCell.xib in Resources */,
 				ED2725CD2971A51F0083BFC0 /* WSMoodCollectionCell.xib in Resources */,
 				EDC1118D298B7B6E00BD9E3C /* check-circle@3x.png in Resources */,
+				ED7290F1299F263F00C5EBD3 /* WSCommunityComBottomView.xib in Resources */,
 				ED313BC32965682900FFCBC1 /* Main.storyboard in Resources */,
-				ED87645629692B4600B8F5AC /* WSCommunityTableCell.xib in Resources */,
-				ED8764AF296C49F700B8F5AC /* WSDataTargetView.xib in Resources */,
 				ED8764D2296E57E300B8F5AC /* WSInfomationController.xib in Resources */,
-				ED272593296EF39E0083BFC0 /* WSPersonHeadView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2788,18 +2339,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED313C5B2966CED200FFCBC1 /* WSTabbarController.m in Sources */,
 				ED272659297808DA0083BFC0 /* WSMyPersentController.m in Sources */,
 				EDD4C5DD29922F5400DB3F39 /* WSCheckCanRequest.m in Sources */,
 				ED2726352977AE280083BFC0 /* WSPersonPostTableCell.m in Sources */,
 				EDC111A3298E000B00BD9E3C /* WSFollowingListRequest.m in Sources */,
 				ED272675297A54F60083BFC0 /* MBProgressHUD+CKhud.m in Sources */,
 				ED2726482978031C0083BFC0 /* WSDeleteAccountController.m in Sources */,
-				ED87645A296942ED00B8F5AC /* WSComImageCollectionCell.m in Sources */,
 				ED313BBA2965682900FFCBC1 /* AppDelegate.m in Sources */,
-				ED8764BE296D159500B8F5AC /* WSDailyGoalView.m in Sources */,
 				EDC1112B2988E20D00BD9E3C /* WSFollowingRequest.m in Sources */,
 				ED0102082986B506000235F4 /* CKRefreshFooter.m in Sources */,
+				ED7290E7299F261000C5EBD3 /* WSCommunityCommentTableCell.m in Sources */,
 				ED1D329E298764FB000B319B /* WSPublicCycleController.m in Sources */,
 				ED272653297806540083BFC0 /* WSBlackListTableCell.m in Sources */,
 				ED313C382965D02500FFCBC1 /* WSSetPasswordController.m in Sources */,
@@ -2814,14 +2363,10 @@
 				ED374AD9298FA037003577EB /* CKBaseWebViewController.m in Sources */,
 				EDC1111F2988044F00BD9E3C /* WSCancelLikeRequest.m in Sources */,
 				EDC11163298A9EE000BD9E3C /* WSNewsController.m in Sources */,
-				ED313C80296716A800FFCBC1 /* WSYogaHeadCollectionCell.m in Sources */,
 				ED0101EF2984F1F0000235F4 /* NSString+MDYStringSize.m in Sources */,
 				ED27260C2976B98C0083BFC0 /* WSDiaryMoreCollectionCell.m in Sources */,
-				ED313C7B296711A200FFCBC1 /* WSYogaCourseCollectionCell.m in Sources */,
 				ED2725C72971A3500083BFC0 /* WSMoodController.m in Sources */,
 				ED2725EC297247490083BFC0 /* NSString+NCDate.m in Sources */,
-				ED313C8B2967D96400FFCBC1 /* WSMeditateCollectionCell.m in Sources */,
-				ED313C602966D25800FFCBC1 /* WSHomeController.m in Sources */,
 				ED313C132965759D00FFCBC1 /* UIButton+WSButton.m in Sources */,
 				ED27264E297805FE0083BFC0 /* WSBlackListController.m in Sources */,
 				EDC1114A298A45B100BD9E3C /* WSGetBlackListRequest.m in Sources */,
@@ -2830,18 +2375,13 @@
 				EDC111382989559B00BD9E3C /* WSCheckFollowRequest.m in Sources */,
 				ED27261B29777FBE0083BFC0 /* WSCycleDetailController.m in Sources */,
 				ED313C332965CEF800FFCBC1 /* WSCreateAccountController.m in Sources */,
-				ED50163C296ED8A500A12CBC /* WSMinePostListController.m in Sources */,
-				ED8764A3296BC75300B8F5AC /* WSPushCommunityController.m in Sources */,
 				EDC11193298B7D8B00BD9E3C /* EMConversationUserDataModel.m in Sources */,
 				ED2726152976DCB90083BFC0 /* WSCycleListTableCell.m in Sources */,
-				ED313C6E2966F5CD00FFCBC1 /* WSHomeHeaderView.m in Sources */,
-				ED501641296ED8ED00A12CBC /* WSMineCollectController.m in Sources */,
 				ED2725B1297106B90083BFC0 /* WSCYLTabbarController.m in Sources */,
 				ED876479296A864600B8F5AC /* WSReportController.m in Sources */,
 				EDC11147298A44DA00BD9E3C /* WSAddBlacklistRequest.m in Sources */,
 				ED2725F9297439830083BFC0 /* WSDiaryDetailController.m in Sources */,
 				ED0102092986B506000235F4 /* CKRefreshHeader.m in Sources */,
-				ED87645529692B4600B8F5AC /* WSCommunityTableCell.m in Sources */,
 				ED87646C29694AB500B8F5AC /* MMPopupCategory.m in Sources */,
 				ED2726252977A2A40083BFC0 /* WSCycleCotentTableCell.m in Sources */,
 				ED8764CB296D9F5500B8F5AC /* WSMIneSettingView.m in Sources */,
@@ -2853,19 +2393,14 @@
 				ED27260429743EEE0083BFC0 /* WSDetailDiaryController.m in Sources */,
 				ED2725D22971B5C90083BFC0 /* WSDiaryEditController.m in Sources */,
 				EDC1113529894F2F00BD9E3C /* WSGetUserInfoByIDRequest.m in Sources */,
-				ED313C652966D2B400FFCBC1 /* WSCommuntyController.m in Sources */,
 				ED313C0829656E5B00FFCBC1 /* AppDelegate+WSAppDelegate.m in Sources */,
 				ED313C3D2965D30700FFCBC1 /* WSConfirmPassController.m in Sources */,
 				ED0101EB2984ECD2000235F4 /* WSRegistUserRequest.m in Sources */,
-				ED876491296AB3CC00B8F5AC /* WSCommunityComBottomView.m in Sources */,
-				ED876488296AAC2800B8F5AC /* WSCommunityDetailTableCell.m in Sources */,
 				EDC1113B29895E0B00BD9E3C /* WSDeleteCycleRequest.m in Sources */,
-				ED8764AD296C49E900B8F5AC /* WSDataTargetView.m in Sources */,
 				EDC1111C2987FA0600BD9E3C /* WSLikeCycleRequest.m in Sources */,
 				ED2725BC29713A950083BFC0 /* WSWeatherController.m in Sources */,
 				EDC1113E2989698500BD9E3C /* WSCancelFollowRequest.m in Sources */,
 				EDC11144298A1E6C00BD9E3C /* WSRechageListConfigRequest.m in Sources */,
-				ED313C862967D80600FFCBC1 /* WSMeditationController.m in Sources */,
 				ED1D32A5298776DF000B319B /* WSCycleAddOrEditRequest.m in Sources */,
 				ED313C2E2965BBC200FFCBC1 /* WSMainButton.m in Sources */,
 				ED27265E297809A40083BFC0 /* WSMyPersentCollectionCell.m in Sources */,
@@ -2880,14 +2415,12 @@
 				EDC111322988E84800BD9E3C /* WSGetUserInfoRequest.m in Sources */,
 				ED2725F42972479C0083BFC0 /* WSCalendarView.m in Sources */,
 				ED27259B29704F990083BFC0 /* WSMoreTextAlterView.m in Sources */,
-				ED313C6A2966D30000FFCBC1 /* WSMinwDataController.m in Sources */,
 				ED27262B2977A6FA0083BFC0 /* WSPersonPController.m in Sources */,
 				EDC11159298A557F00BD9E3C /* WSGetAppKeyRequest.m in Sources */,
 				ED2725AC2970F6230083BFC0 /* WSPushButton.m in Sources */,
 				ED2725EB297247490083BFC0 /* LXCalendarDayModel.m in Sources */,
 				ED0101F42984FB68000235F4 /* WSLoginUserRequest.m in Sources */,
 				ED2725CC2971A51F0083BFC0 /* WSMoodCollectionCell.m in Sources */,
-				ED876483296AAB9B00B8F5AC /* WSCommunityDetailController.m in Sources */,
 				ED87646D29694AB500B8F5AC /* MMPopupWindow.m in Sources */,
 				ED0101E62983C55D000235F4 /* RSAEncryptor.m in Sources */,
 				ED313C492965DCE300FFCBC1 /* WSSetBodyView.m in Sources */,
@@ -2900,7 +2433,6 @@
 				ED313BCB2965682C00FFCBC1 /* main.m in Sources */,
 				ED2725EF297247490083BFC0 /* LXCalendarMonthModel.m in Sources */,
 				ED0101F8298632AA000235F4 /* WSDiaryAddOrEditRequest.m in Sources */,
-				ED8764A9296C3A6100B8F5AC /* WSDataTimeCollectionCell.m in Sources */,
 				ED313C0E296572A000FFCBC1 /* WSLoginController.m in Sources */,
 				EDC1118A298B7B6E00BD9E3C /* UIImageView+UserInfo.m in Sources */,
 				ED8764D1296E57E300B8F5AC /* WSInfomationController.m in Sources */,
@@ -2909,7 +2441,6 @@
 				ED0101FC29863809000235F4 /* WSUploadFileRequest.m in Sources */,
 				ED2725C12971903A0083BFC0 /* WSWeatherCollectionCell.m in Sources */,
 				ED272680297A562D0083BFC0 /* WSRegistEmailRequest.m in Sources */,
-				ED87648D296AAD2800B8F5AC /* WSCommunityCommentTableCell.m in Sources */,
 				ED2725F0297247490083BFC0 /* LXCalenderCell.m in Sources */,
 				ED2726202977A1A90083BFC0 /* WSCycleImageTableCell.m in Sources */,
 				ED272683297A56D10083BFC0 /* WSEmailCanBeRequest.m in Sources */,
@@ -2921,22 +2452,19 @@
 				ED87646E29694AB500B8F5AC /* MMPopupView.m in Sources */,
 				ED8764B5296D062A00B8F5AC /* MMAlertView.m in Sources */,
 				ED1D32982986C9FF000B319B /* WSDiaryDeleteRequest.m in Sources */,
-				ED8764BA296D100200B8F5AC /* WSModifyTargetController.m in Sources */,
 				EDC11150298A4A3B00BD9E3C /* WSGetGiftStatisticRequest.m in Sources */,
 				ED0102022986A980000235F4 /* WSDiaryFindRequest.m in Sources */,
 				EDC1112229880B3400BD9E3C /* WSAddOrEditCommentRequest.m in Sources */,
 				ED2726402977E72A0083BFC0 /* WSMyCoinCollectionCell.m in Sources */,
 				ED313C422965D57B00FFCBC1 /* WSInformationController.m in Sources */,
 				ED87647329694B5300B8F5AC /* WSSheetView.m in Sources */,
-				ED313C71296705F400FFCBC1 /* WSHomeView.m in Sources */,
 				ED2725FE29743AE10083BFC0 /* WSDiaryDetailTableCell.m in Sources */,
-				ED8764D7296E620E00B8F5AC /* WSPersonPageController.m in Sources */,
 				ED2725ED297247490083BFC0 /* LXCalendarView.m in Sources */,
 				EDC1119B298BA7E400BD9E3C /* EMUserDataModel.m in Sources */,
 				ED0101FF29863883000235F4 /* WSBaseImageController.m in Sources */,
 				ED87646F29694AB500B8F5AC /* MMPopupItem.m in Sources */,
 				ED27262F2977A7E40083BFC0 /* WSPersonPageView.m in Sources */,
-				ED313C912967E26700FFCBC1 /* WSTargetController.m in Sources */,
+				ED7290F2299F263F00C5EBD3 /* WSCommunityComBottomView.m in Sources */,
 				ED272671297A541C0083BFC0 /* WSSingleCache.m in Sources */,
 				ED2725A72970F4C30083BFC0 /* WSDiaryCycleController.m in Sources */,
 				ED2726082976B7990083BFC0 /* WSDiaryMoreView.m in Sources */,
@@ -2947,17 +2475,13 @@
 				EDC11172298B684600BD9E3C /* WSConversationsTableCell.m in Sources */,
 				EDC1114D298A48AE00BD9E3C /* WSCancelBlackRequest.m in Sources */,
 				ED272687297A5EE10083BFC0 /* WSGetPpkRequest.m in Sources */,
-				ED313C952968349800FFCBC1 /* WSTargetHead.m in Sources */,
 				ED313C4C2966B72500FFCBC1 /* WSSetTrainView.m in Sources */,
-				ED313C762967100E00FFCBC1 /* WSYogaController.m in Sources */,
 				EDC1119F298D0A4700BD9E3C /* WSRTCTokenRequest.m in Sources */,
 				ED313BFA29656B6000FFCBC1 /* WSBaseController.m in Sources */,
 				EDC111B3298E0ED300BD9E3C /* WSSendGiftRequest.m in Sources */,
 				EDC1118B298B7B6E00BD9E3C /* AvatarUrlStore.m in Sources */,
 				EDC11156298A502D00BD9E3C /* WSFeedbackRequest.m in Sources */,
 				ED2725A22970F3A20083BFC0 /* WSMainPageController.m in Sources */,
-				ED87644F2968745000B8F5AC /* WSTargetChartCollectionCell.m in Sources */,
-				ED272591296EEEF50083BFC0 /* WSPersonHeadView.m in Sources */,
 				EDC11153298A4FBC00BD9E3C /* WSDeleteUsersRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3131,12 +2655,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WomenSports/WomenSports.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Distribution: PHARMAFORTE SINGAPORE PTE LTD (6FMSNZ23AY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution: PHARMAFORTE SINGAPORE PTE LTD (6FMSNZ23AY)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hasan Emir Koroglu (SVQM8UBPQ3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hasan Emir Koroglu (SVQM8UBPQ3)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6FMSNZ23AY;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = SVQM8UBPQ3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WomenSports/BasicModule/Config/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -3158,7 +2682,7 @@
 					"\"$(SRCROOT)/WomenSports/FunctionModule/Vendors/JVSRSAHandler/openssl/include\"",
 				);
 				INFOPLIST_FILE = WomenSports/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Diary;
+				INFOPLIST_KEY_CFBundleDisplayName = "ABLO diary";
 				INFOPLIST_KEY_NSCameraUsageDescription = "App needs to access camera to send pictures";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "App needs to access microphone for voice call";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "The diary app needs to access the album for uploading the diary image";
@@ -3178,10 +2702,10 @@
 					"$(PROJECT_DIR)/WomenSports/FunctionModule/Vendors/JVSRSAHandler/openssl/lib",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lword.look;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diary.me;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = look;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = diaryApp;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -3197,12 +2721,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WomenSports/WomenSports.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Distribution: PHARMAFORTE SINGAPORE PTE LTD (6FMSNZ23AY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Distribution: PHARMAFORTE SINGAPORE PTE LTD (6FMSNZ23AY)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hasan Emir Koroglu (SVQM8UBPQ3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hasan Emir Koroglu (SVQM8UBPQ3)";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6FMSNZ23AY;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = SVQM8UBPQ3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WomenSports/BasicModule/Config/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -3224,7 +2748,7 @@
 					"\"$(SRCROOT)/WomenSports/FunctionModule/Vendors/JVSRSAHandler/openssl/include\"",
 				);
 				INFOPLIST_FILE = WomenSports/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Diary;
+				INFOPLIST_KEY_CFBundleDisplayName = "ABLO diary";
 				INFOPLIST_KEY_NSCameraUsageDescription = "App needs to access camera to send pictures";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "App needs to access microphone for voice call";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "The diary app needs to access the album for uploading the diary image";
@@ -3244,10 +2768,10 @@
 					"$(PROJECT_DIR)/WomenSports/FunctionModule/Vendors/JVSRSAHandler/openssl/lib",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lword.look;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diary.me;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = look;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = diaryApp;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

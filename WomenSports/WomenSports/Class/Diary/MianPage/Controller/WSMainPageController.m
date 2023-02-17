@@ -88,8 +88,10 @@
     }];
     [self.mineView setDidClickContent:^(NSInteger index) {
         if (index == 0) {
-            WSMyCoinController *vc = [WSMyCoinController.alloc init];
-            [weakSelf.navigationController pushViewController:vc animated:YES];
+            [MBProgressHUD showMessage:@"Under development..."];
+            return;
+//            WSMyCoinController *vc = [WSMyCoinController.alloc init];
+//            [weakSelf.navigationController pushViewController:vc animated:YES];
         }
         if (index == 6) {
             WSDeleteAccountController *vc = [WSDeleteAccountController.alloc init];

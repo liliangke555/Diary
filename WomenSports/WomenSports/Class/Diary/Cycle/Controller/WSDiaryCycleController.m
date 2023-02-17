@@ -257,7 +257,9 @@
     WSCycleListTableCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(WSCycleListTableCell.class)];
     CKWeakify(self);
     [cell setDidClickGift:^(WSCycleDetailModel * _Nonnull detailModel) {
-        [weakSelf giftViewShowWithModel:detailModel];
+        [MBProgressHUD showMessage:@"Under development..."];
+        return;
+//        [weakSelf giftViewShowWithModel:detailModel];
     }];
     [cell setDidClickMore:^(WSCycleDetailModel * _Nonnull detailModel){
         [weakSelf checkFollowingWithModel:detailModel];

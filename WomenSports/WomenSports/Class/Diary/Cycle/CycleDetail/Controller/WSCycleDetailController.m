@@ -464,7 +464,8 @@
             [weakSelf sendCommentWithString:string];
         }];
         [_comBottomView setDidClickGift:^{
-            [weakSelf giftViewShow];
+            [MBProgressHUD showMessage:@"Under development..."];
+//            [weakSelf giftViewShow];
         }];
         [_comBottomView setDidClickLike:^(BOOL isLike) {
             if (isLike) {
