@@ -19,10 +19,10 @@ NS_ASSUME_NONNULL_BEGIN
 #define AssignProperty @property (assign, nonatomic)
 #define StrongProperty @property (strong, nonatomic)
 
-#define WSPublicKey  @"WSPublicKey"
-#define WSPrivateKey  @"WSPrivateKey"
-#define WSEmKey  @"WSemKey"//环信key
-#define WSAgKey  @"WSAgKey"//声网Key
+#define DFPublicKey  @"DFPublicKey"
+#define DFPrivateKey  @"DFPrivateKey"
+#define DFEmKey  @"DFEmKey"//环信key
+#define DFAgKey  @"DFAgKey"//声网Key
 
 #define WSAPPID [[[UIDevice currentDevice] identifierForVendor] UUIDString]
 static NSString *WSDeviceType = @"2";

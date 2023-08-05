@@ -6,12 +6,12 @@
 //
 
 #import "BaseRequest.h"
-
+#import "RSAEncryptor.h"
 //#import "AppDelegate+RCT_AppDelegate.h"
 
 
-NSString *const ServerAddressWeb = @"https://pharmaforte.xyz/diaryapi";
-//NSString *const ServerAddressWeb = @"http://test.lejun.co";
+//NSString *const ServerAddressWeb = @"https://pharmaforte.xyz/diaryapi";
+NSString *const ServerAddressWeb = @"http://47.109.51.24/api";
 
 @implementation BaseRequest
 + (void)load {
@@ -92,7 +92,7 @@ NSString *const ServerAddressWeb = @"https://pharmaforte.xyz/diaryapi";
                 }
                 if(respJsonDict[@"code"] && ![respJsonDict[@"code"] isKindOfClass:[NSNull class]]) {
                     if ([respJsonDict[@"code"] integerValue] == 0) {
-                        self.response.code = 1;
+                        self.response.code = 0;
                     } else {
                         self.response.code = [respJsonDict[@"code"] integerValue];
                     }
@@ -112,7 +112,7 @@ NSString *const ServerAddressWeb = @"https://pharmaforte.xyz/diaryapi";
                     }
                 }
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    if (self->_response.code != 0) {
+                    if (self->_response.code == 0) {
                         if (self->_succHandler) {
                             self->_succHandler(self.response);
                         }
@@ -124,7 +124,7 @@ NSString *const ServerAddressWeb = @"https://pharmaforte.xyz/diaryapi";
                         });
                         //需要登录
                         if(self.response.code == 403 ||self.response.code == 401){
-                            [WSSingleCache clean];
+//                            [WSSingleCache clean];
 //                            AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
 //                            [self animation];
 //                            [delegate setRootViewControllerWithLogin:NO];
@@ -160,19 +160,8 @@ NSString *const ServerAddressWeb = @"https://pharmaforte.xyz/diaryapi";
     NSString *url = [NSString stringWithFormat:@"%@/%@",ServerAddressWeb,[self uri]];
     
     NSMutableDictionary *paramters = [self mj_keyValues];
-    [self.sessionManager.requestSerializer setValue:@"2"  forHTTPHeaderField:@"deviceType"];
-    [self.sessionManager.requestSerializer setValue:WSPackageName  forHTTPHeaderField:@"packageName"];
-    NSString *deviceUUID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-    [self.sessionManager.requestSerializer setValue:deviceUUID  forHTTPHeaderField:@"appId"];
-    [self.sessionManager.requestSerializer setValue:deviceUUID  forHTTPHeaderField:@"allAppId"];
-//    NSString *version = [[[NSBundle mainBundle]infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-    [self.sessionManager.requestSerializer setValue:WSVersion  forHTTPHeaderField:@"version"];
-    [self.sessionManager.requestSerializer setValue:@"zh-Hans-CN" forHTTPHeaderField:@"locale"];
-    [self.sessionManager.requestSerializer setValue:@"460" forHTTPHeaderField:@"cardtype"];
-    [self.sessionManager.requestSerializer setValue:@"2" forHTTPHeaderField:@"deviceType"];
-    [self.sessionManager.requestSerializer setValue:@"1" forHTTPHeaderField:@"useVpn"];
-    [self.sessionManager.requestSerializer setValue:[NSString stringWithFormat:@"%.0lf", (double)[[NSDate  date] timeIntervalSince1970]*1000] forHTTPHeaderField:@"localTime"];
-    NSString *token = WSSingleCache.shareSingleCache.token;
+    [self.sessionManager.requestSerializer setValue:@"iphone"  forHTTPHeaderField:@"XX-Device-Type"];
+    NSString *token = DFSingleCache.shareSingleCache.token;
     if (token.length <= 0) {
         token = @"";
     }
@@ -190,54 +179,12 @@ NSString *const ServerAddressWeb = @"https://pharmaforte.xyz/diaryapi";
     }
     
     if([[self requestMethod] isEqualToString:RequestMethodGet]) {
-        if (self.isNotEncryption) {
-            [self.sessionManager GET:url parameters:paramters headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-
-                [self requestSuccess:responseObject];
-            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                NSLog(@"网络错误++++++%@+++++",error);
-                 [self requestFaild:(NSHTTPURLResponse *)task.response error:error];
-            }];
-        } else {
-            NSString *jsonString = [paramters mj_JSONString];
-            NSString *body = [[RSAEncryptor sharedInstance] rsaEncryptString:jsonString];
-            NSMutableArray *mArray = [NSMutableArray.alloc init];
-            for (NSString *key in paramters.allKeys) {
-                NSString *string = [NSString stringWithFormat:@"%@=%@",key,paramters[key]];
-                [mArray addObject:string];
-            }
-            
-            NSString *enString = [mArray componentsJoinedByString:@"&"];
-            NSString *enDString = [[RSAEncryptor sharedInstance] rsaEncryptString:enString];
-            NSDictionary *dic = @{@"encryptParam":enDString};
-            
-            [paramters setObject:body forKey:@"encryptParam"];
-            [self.sessionManager GET:url parameters:dic headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                NSMutableDictionary *dataSource = [responseObject mutableCopy];
-                if ([responseObject isKindOfClass:[NSDictionary class]]) {
-                    if ([responseObject[@"data"] isKindOfClass:NSString.class]) {
-                        NSString *string = [[RSAEncryptor sharedInstance] rsaDecryptString:responseObject[@"data"]];
-                        NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-                        NSError *err;
-                        NSDictionary *dataDic = [NSJSONSerialization JSONObjectWithData:data
-                                                                            options:NSJSONReadingMutableContainers
-                                                                              error:&err];
-                        id content = dataDic[@"content"];
-                        if (content) {
-                            [dataSource setObject:content forKey:@"data"];
-                        } else {
-                            [dataSource setObject:dataDic forKey:@"data"];
-                        }
-                    }
-                }
-                [self requestSuccess:dataSource];
-    //            [self requestSuccess:responseObject];
-            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                NSLog(@"网络错误++++++%@+++++",error);
-                 [self requestFaild:(NSHTTPURLResponse *)task.response error:error];
-            }];
-        }
-        
+        [self.sessionManager GET:url parameters:paramters headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            [self requestSuccess:responseObject];
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            NSLog(@"网络错误++++++%@+++++",error);
+             [self requestFaild:(NSHTTPURLResponse *)task.response error:error];
+        }];
     } else if([[self requestMethod] isEqualToString:RequestMethodPut]) {
         [self.sessionManager PUT:url parameters:paramters headers:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             [self requestSuccess:responseObject];
@@ -247,111 +194,22 @@ NSString *const ServerAddressWeb = @"https://pharmaforte.xyz/diaryapi";
         }];
     } else if([[self requestMethod] isEqualToString:RequestMethodDelete]) {
         [self.sessionManager DELETE:url parameters:paramters headers:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//            NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
-            NSMutableDictionary *dataSource = [NSMutableDictionary dictionaryWithDictionary:responseObject];
-            if ([responseObject isKindOfClass:[NSDictionary class]]) {
-                if ([responseObject[@"data"] isKindOfClass:NSString.class]) {
-                    NSString *string = [[RSAEncryptor sharedInstance] rsaDecryptString:responseObject[@"data"]];
-                    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-                    NSError *err;
-                    NSDictionary *dataDic = [NSJSONSerialization JSONObjectWithData:data
-                                                                        options:NSJSONReadingMutableContainers
-                                                                          error:&err];
-                    id content = dataDic[@"content"];
-                    if (content) {
-                        [dataSource setObject:content forKey:@"data"];
-                    } else {
-                        [dataSource setObject:dataDic forKey:@"data"];
-                    }
-                }
-            }
-            [self requestSuccess:dataSource];
-//            [self requestSuccess:responseObject];
+            [self requestSuccess:responseObject];
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             NSLog(@"网络错误++++++%@+++++",error);
              [self requestFaild:(NSHTTPURLResponse *)task.response error:error];
         }];
     } else {
-        if (self.isNotEncryption) {
-//            self.sessionManager.requestSerializer
-            [self.sessionManager POST:url parameters:paramters headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                 
-                 [self requestSuccess:responseObject];
-             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                 NSLog(@"网络错误++++++%@+++++",error);
-                 [self requestFaild:(NSHTTPURLResponse *)task.response error:error];
-             }];
-        } else {
-            NSString *jsonString = [paramters mj_JSONString];
-//            NSData *jsonData = [NSJSONSerialization dataWithJSONObject:paramters options:0 error:nil];
-            NSString *body = [[RSAEncryptor sharedInstance] rsaEncryptString:jsonString];
-//            NSString *key = [[NSUserDefaults standardUserDefaults] objectForKey:WSPublicKey];
-//            NSString *enString = [RSAEncryptor encryptString:jsonString publicKey:key];
-//            NSData *body = [enString dataUsingEncoding:NSUTF8StringEncoding];
-//            NSString *dic = [[RSAEncryptor sharedInstance] rsaDecryptString:body];
-            AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-            
-            NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"POST" URLString:url parameters:paramters error:nil];
-            request.timeoutInterval= 15.0;
-            [request setValue:@"2"  forHTTPHeaderField:@"deviceType"];
-            [request setValue:WSPackageName  forHTTPHeaderField:@"packageName"];
-            NSString *deviceUUID = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-            [request setValue:deviceUUID  forHTTPHeaderField:@"appId"];
-            [request setValue:deviceUUID  forHTTPHeaderField:@"allAppId"];
-        //    NSString *version = [[[NSBundle mainBundle]infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-            [request setValue:WSVersion  forHTTPHeaderField:@"version"];
-            [request setValue:@"zh-Hans-CN" forHTTPHeaderField:@"locale"];
-            [request setValue:@"460" forHTTPHeaderField:@"cardtype"];
-            [request setValue:@"2" forHTTPHeaderField:@"deviceType"];
-            [request setValue:@"1" forHTTPHeaderField:@"useVpn"];
-            [request setValue:[NSString stringWithFormat:@"%.0lf", (double)[[NSDate  date] timeIntervalSince1970]*1000] forHTTPHeaderField:@"localTime"];
-            [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-            NSString *token = WSSingleCache.shareSingleCache.token;
-            if (token.length <= 0) {
-                token = @"";
-            }
-            [request setValue:token forHTTPHeaderField:@"token"];
-            // 设置body
-            [request setHTTPBody:[body dataUsingEncoding:NSUTF8StringEncoding]];
-            AFHTTPResponseSerializer *responseSerializer = [AFHTTPResponseSerializer serializer];
-            responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",
-                                                         @"text/html",
-                                                         @"text/json",
-                                                         @"text/javascript",
-                                                         @"text/plain",
-                                                         
-                                                         nil];
-            manager.responseSerializer = responseSerializer;
-            [[manager dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-                
-                if (!error) {
-                    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
-                    NSMutableDictionary *dataSource = [dic mutableCopy];
-                    if ([dic isKindOfClass:[NSDictionary class]]) {
-                        if ([dic[@"data"] isKindOfClass:NSString.class]) {
-                            NSString *string = [[RSAEncryptor sharedInstance] rsaDecryptString:dic[@"data"]];
-                            NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-                            NSError *err;
-                            NSDictionary *dataDic = [NSJSONSerialization JSONObjectWithData:data
-                                                                                options:NSJSONReadingMutableContainers
-                                                                                  error:&err];
-                            id content = dataDic[@"content"];
-                            if (content) {
-                                [dataSource setObject:content forKey:@"data"];
-                            } else {
-                                [dataSource setObject:dataDic forKey:@"data"];
-                            }
-                        }
-                    }
-                    [self requestSuccess:dataSource];
-                } else {
-                    NSLog(@"网络错误++++++%@+++++",error);
-                    [self requestFaild:(NSHTTPURLResponse *)response error:error];
-                }
-            }] resume];
-        }
+        [self.sessionManager POST:url parameters:paramters headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+             
+             [self requestSuccess:responseObject];
+         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+             NSLog(@"网络错误++++++%@+++++",error);
+             [self requestFaild:(NSHTTPURLResponse *)task.response error:error];
+         }];
     }
 }
+
 - (void)asyncCheckRequestWithsuccessHandler:(RequestCompletionHandler)succHandler failHandler:(RequestCompletionHandler)fail {
     self.succHandler = succHandler;
     self.failHandler = fail;
@@ -370,7 +228,7 @@ NSString *const ServerAddressWeb = @"https://pharmaforte.xyz/diaryapi";
     [self.sessionManager.requestSerializer setValue:@"2" forHTTPHeaderField:@"deviceType"];
     [self.sessionManager.requestSerializer setValue:@"1" forHTTPHeaderField:@"useVpn"];
     [self.sessionManager.requestSerializer setValue:[NSString stringWithFormat:@"%.0lf", (double)[[NSDate  date] timeIntervalSince1970]*1000] forHTTPHeaderField:@"localTime"];
-    NSString *token = WSSingleCache.shareSingleCache.token;
+    NSString *token = DFSingleCache.shareSingleCache.token;
     if (token.length <= 0) {
         token = @"";
     }
@@ -492,7 +350,7 @@ NSString *const ServerAddressWeb = @"https://pharmaforte.xyz/diaryapi";
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json", @"text/plain", @"text/html", nil];
     
-    NSString *token = [WSSingleCache.shareSingleCache token];
+    NSString *token = [DFSingleCache.shareSingleCache token];
     if (token.length <= 0) {
         token = @"";
     }
@@ -567,7 +425,7 @@ NSString *const ServerAddressWeb = @"https://pharmaforte.xyz/diaryapi";
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json", @"text/plain", @"text/html", nil];
     
     [manager.requestSerializer setValue:@"iphone"  forHTTPHeaderField:@"XX-Device-Type"];
-    NSString *token = [WSSingleCache shareSingleCache].token;
+    NSString *token = [DFSingleCache shareSingleCache].token;
     if (token.length <= 0) {
         token = @"";
     }

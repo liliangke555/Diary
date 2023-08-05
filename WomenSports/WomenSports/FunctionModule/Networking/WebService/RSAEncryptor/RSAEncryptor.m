@@ -8,6 +8,7 @@
 
 #import "RSAEncryptor.h"
 #import <CommonCrypto/CommonDigest.h>
+#import "BaseRequest.h"
 
 @implementation RSAEncryptor{
     SecKeyRef publicKey;
@@ -20,14 +21,14 @@
 //}
 - (SecKeyRef)getPublicKey {
     if (!publicKey) {
-        NSString *key = [[NSUserDefaults standardUserDefaults] objectForKey:WSPublicKey];
+        NSString *key = [[NSUserDefaults standardUserDefaults] objectForKey:DFPublicKey];
         publicKey = [RSAEncryptor addPublicKey:key];
     }
     return publicKey;
 }
 - (SecKeyRef)getPrivateKey {
     if (!privateKey) {
-        NSString *key = [[NSUserDefaults standardUserDefaults] objectForKey:WSPrivateKey];
+        NSString *key = [[NSUserDefaults standardUserDefaults] objectForKey:DFPrivateKey];
         privateKey = [RSAEncryptor addPrivateKey:key];
     }
     return privateKey;

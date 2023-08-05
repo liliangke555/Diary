@@ -2658,7 +2658,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hasan Emir Koroglu (SVQM8UBPQ3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hasan Emir Koroglu (SVQM8UBPQ3)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = SVQM8UBPQ3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2724,7 +2724,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hasan Emir Koroglu (SVQM8UBPQ3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hasan Emir Koroglu (SVQM8UBPQ3)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = SVQM8UBPQ3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

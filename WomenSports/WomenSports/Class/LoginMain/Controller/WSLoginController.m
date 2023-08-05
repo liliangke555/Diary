@@ -249,6 +249,7 @@ static NSString *contentString = @"These are the app’s usage agreement and use
     [appleButton setTitle:@"   Sign in with Apple" forState:UIControlStateNormal];
     [appleButton setImage:[UIImage imageNamed:@"login_apple_icon"] forState:UIControlStateNormal];
     [appleButton.layer setCornerRadius:24];
+    [appleButton setHidden:YES];
     
     UILabel *label = [UILabel.alloc init];
     [self.view addSubview:label];
